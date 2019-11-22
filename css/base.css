@@ -1,0 +1,24 @@
+:root{
+    --purple-lighter:#9028e0;
+    --purple-lighter-opacity:hsla(274, 75%, 52%, 0.959);
+    --purple-25: #9042a840;
+
+    --purple:#783CA5;
+    --purple-darker:#6234BB;
+    --purple-blue:#36229B;
+    --gray: #cecece;
+    --gray-dark: #575555;
+    --ofWhite:#FBF7FD;
+    --purple-blue-opacity:hsla(250, 65%, 37%, 0.966);
+    --white:rgb(238, 235, 240);
+    --white-opacity:rgba(238, 235, 240, 0);
+    --black:rgb(30, 29, 31);
+    --purple:#783ca5;
+}
+*,*::before,*::after {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration-line: none;
+}

@@ -1,0 +1,129 @@
+/* ABEM naming convention Block, Element and Modifier
+p=a(atom),m(molecule) or o(organism)
+Block = p-blockName
+Element = p-blockName__elementName
+Modifier = p-blockName__elementName.-modifierName*/
+
+.container6{
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+.form{
+    padding:0 1rem;
+}
+.o-form__content{
+    display:grid;
+    row-gap: 0.5rem;
+    grid-template-columns:repeat(1, 1fr);
+    /* grid-template-rows: auto; */
+    grid-template-areas: 
+                        " . "
+                        "h1"
+                        "p "
+                        "name"
+                        "email" 
+                        "phone"
+                        "message"
+                        "btn"
+                       ;
+  }
+.form__input {
+    padding: .4rem .7rem;
+    font-size: .8rem;  
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    width: 100%;
+}
+.form__input.-primary{
+    border: 1px solid var(--gray);
+    transition: all 0.15s ease-in-out;
+    border-radius: 5px;
+}
+.form__input:focus {
+    outline: 0;
+    border-color: var(--purple);
+    box-shadow: 0 0 0.20rem 0.15rem var(--purple-25);
+}
+.form__input::placeholder{
+    vertical-align: top;
+    opacity: 1;
+}
+.form__input.-ws{
+    width: 23rem;
+}
+.form__input.-wl{
+    width: 23rem;
+}
+.form__input.-hs{
+    height: 3.2rem;
+}
+.form__input.-hl{
+    height: calc(20.5em + 0.75rem + 2px);
+}
+.form__input.-hl{
+    height: calc(20.5em + 0.75rem + 2px);
+}
+.form__textarea--resize-no{
+    resize:none;
+}
+.form__btn{
+    width:100%;
+    margin:2rem 0;
+    height:3rem;  
+}
+.form__btn--primary{
+    border:none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    text-transform:uppercase;
+    background-color:var(--purple);
+    color:white;
+    font-weight: 600;
+    transition: background-color .5s ease-in-out;
+    transition-property: color .5s ease-in-out;
+}
+.form__btn--primary:hover{
+    cursor: pointer;
+    background-color:var(--purple-darker);
+    color:var(--white);
+}
+.a-form__name{
+    grid-area: name;
+}
+.a-form__email{
+    grid-area:email;
+}
+.a-form__phone{
+    grid-area:phone;
+}
+.a-form__message{
+    grid-area:message;
+}
+.a-form__btn{
+    grid-area:btn;
+    text-align: center;
+   
+}
+ @media (min-width: 720px){
+ 
+    .form__btn{
+        width:70%;
+        height:3rem;
+        margin:2rem 0;
+    }
+
+.o-form__content{
+    display:grid;
+    column-gap: 2.4rem;
+    row-gap:2.7rem;
+    grid-template-columns:repeat(13, 1fr);
+    grid-template-areas: 
+        
+                        " . . name name name email email email phone phone phone  . ."
+                        " . . message message message message message message message message message . ."
+                        " . . . . . btn btn btn . . . . ."
+                       ;
+  }
+} 
+

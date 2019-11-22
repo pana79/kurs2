@@ -1,0 +1,45 @@
+
+.banner{
+    display:flex;
+    background-image:linear-gradient(to right, var(--purple-blue-opacity),var(--purple-lighter-opacity)),url("../images/get_app_area_bg.jpg");
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    height: 31rem;
+    /* background-blend-mode: multiply; */
+    background-size:cover;
+    background-repeat: no-repeat ;
+    background-position:center;
+}
+.banner.-second{
+    color:black;
+    background: white;
+}
+.banner.-sizeSmall{
+    height:19rem;
+}
+.banner.-ofWhite{
+    background:var(--ofWhite);
+}
+.banner__title{
+   text-align: center;
+    font-size:2.4rem ;   
+}
+.banner__title.-sizeSmall{
+    font-size:1.65rem;
+}
+.banner__body{
+   
+    text-align: center;
+    margin-top:1.7rem;
+}
+.banner__images{
+    margin-top:3rem;
+}
+@media only screen and (min-width:641px){
+    .banner__body{
+        width:30rem;
+        
+    } 
+}
